@@ -2,12 +2,14 @@ import express from "express";
 import fs from "fs";
 import path from "path";
 import bcrypt from "bcrypt";
-// import { uuidv4 as uid } from "uuid";
 import { v4 as uuidv4 } from "uuid";
-// const { v4: uuidv4 } = require('uuid');
+import { fileURLToPath } from "url";
 
 const router = express.Router();
-const usersFile = path.join(_dirname, "../data/user.json");
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const usersFile = path.join(_dirname, "../data/users.json");
 
 // Se o arquivo não existir, cria
 if (!fs.existsSync(usersFile)) {
