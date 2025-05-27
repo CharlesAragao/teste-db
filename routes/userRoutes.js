@@ -9,7 +9,7 @@ const router = express.Router();
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const usersFile = path.join(_dirname, "../data/users.json");
+const usersFile = path.join(__dirname, "../data/users.json");
 
 // Se o arquivo não existir, cria
 if (!fs.existsSync(usersFile)) {
@@ -30,7 +30,7 @@ router.post("/", async (request, response) => {
     try {
         // Busca os usuários existentes
         const data = fs.readFileSync(usersFile, "utf-8");
-        const users = JSON.parse(data);
+        const users = JSON.parse(data || "[]");
 
         // Verifica se o E-mail já existe
         const isEmail = users.find((user) => user.email === email);
@@ -47,7 +47,7 @@ router.post("/", async (request, response) => {
         // Cria um novo usuário
         const newUser = {
             // id: uid(),
-            id: uuidv4,
+            id: uuidv4(),
             name: nome,
             email: email,
             password: hashedPassword,

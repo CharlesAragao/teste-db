@@ -1,0 +1,67 @@
+[
+  {
+    "date": "27/05/2025",
+    "method": "GET",
+    "url": "/"
+  },
+  {
+    "date": "27/05/2025",
+    "method": "POST",
+    "url": "/",
+    "body": {
+      "nome": "Charles Aragão",
+      "email": "charles.aragao@gmail.com",
+      "password": "123456"
+    }
+  },
+  {
+    "date": "27/05/2025",
+    "method": "GET",
+    "url": "/"
+  },
+  {
+    "date": "27/05/2025",
+    "method": "POST",
+    "url": "/usuarios",
+    "body": {
+      "nome": "Charles Aragão",
+      "email": "charles.aragao@gmail.com",
+      "password": "123456"
+    }
+  },
+  {
+    "date": "27/05/2025",
+    "method": "POST",
+    "url": "/usuarios",
+    "body": {
+      "nome": "Charles Aragão",
+      "email": "charles.aragao@gmail.com",
+      "senha": "123456"
+    }
+  },
+  {
+    "date": "27/05/2025",
+    "method": "POST",
+    "url": "/api/users",
+    "body": {
+      "nome": "Charles Aragão",
+      "email": "charles.aragao@gmail.com",
+      "senha": "123456"
+    }
+  },
+  {
+    "date": "27/05/2025",
+    "method": "GET",
+    "url": "/"
+  },
+  {
+    "date": "27/05/2025",
+    "method": "POST",
+    "url": "/api/users",
+    "body": {
+      "nome": "Charles Aragão",
+      "email": "charles.aragao@gmail.com",
+      "senha": "123456"
+    }
+  }
+]

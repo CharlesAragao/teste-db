@@ -1,6 +1,6 @@
 
 import express from 'express';
-import router from "./routes/userRoutes.js";
+import userRoutes from "./routes/userRoutes.js";
 import logger from "./middleware/logger.js"
 
 const app = express();
